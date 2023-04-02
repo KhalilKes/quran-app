@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  
+  apiQDC:"https://api.qurancdn.com/api/qdc"
 };
