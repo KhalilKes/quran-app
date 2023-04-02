@@ -1,0 +1,40 @@
+input::placeholder {
+    text-align: center;
+}
+img{
+    width: 60px;
+}
+.surah-name {
+    text-align: end;
+    color: #3B9B6E;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Amiri';
+}
+.surah-name-en {
+    text-align: end;
+    margin-top: 1rem;
+    color: #B5C2CD;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.img-container {
+    position: relative;
+}
+
+.number-of-ayat {
+    position: absolute;
+    top: 21px;
+    left: 15px;
+    color: #3B9B6E;
+    font-weight: bold;
+}
+.nolink-style {
+    text-decoration: none;
+}
+.duaa-text {
+    font-size: 1.5rem;
+    font-family: 'Amiri';
+    margin: 2rem;
+}

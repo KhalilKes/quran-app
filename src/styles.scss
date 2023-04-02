@@ -1,0 +1,14 @@
+@use 'themes' as *;
+
+@use '@nebular/theme/styles/globals' as *;
+
+@include nb-install() {
+  @include nb-theme-global();
+};
+
+@font-face {
+  font-family: 'Amiri';
+  src: url('assets/font/Amiri-Regular.ttf');
+}
+
+

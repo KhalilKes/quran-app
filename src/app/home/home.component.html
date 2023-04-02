@@ -1,0 +1,34 @@
+<nb-layout>
+    <nb-layout-header fixed>
+        <div class="container">
+            <div class="d-flex flex-row">
+                <input class="m-2" type="text" fullWidth nbInput disabled placeholder="البحث">
+                <button nbButton status="primary"><nb-icon icon="headphones-outline"></nb-icon>قريبا سماع آيات، احزاب، اجزاء...</button>
+            </div>
+        </div>
+    </nb-layout-header>
+    <nb-layout-column>
+        <div class="container">
+            <div class="row flex-row-reverse">
+              <div class="col-sm-12 col-md-4" *ngFor="let chapter of chapters">
+                <nb-card>
+                    <nb-card-body>
+                        <nb-tag status="primary" appearance="outline" [text]="chapter.id" ></nb-tag>
+                        <div class="surah-name"> <a class="nolink-style" [routerLink]="['/chapter', chapter.id]">{{chapter.name_arabic}}</a></div>
+                        <div class="surah-name-en"> {{chapter.name_simple}} </div>
+                        <div class="img-container">
+                            <img src="assets/images/star.svg" alt="star-icon" />
+                            <div class="number-of-ayat">  {{chapter.verses_count}} </div>
+                        </div>   
+                    </nb-card-body>
+                </nb-card>
+              </div>
+            </div>
+          </div>
+    </nb-layout-column>
+    <nb-layout-footer>
+        <div class="duaa-text">
+            v0.0.1 ❤️ اللهم اجعل القرآن الكريم ربيع قلوبنا 
+        </div>
+    </nb-layout-footer>
+</nb-layout>
