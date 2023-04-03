@@ -30,11 +30,11 @@
                       </nb-card>
                 </ng-template>
 
-                <button class="m-3" nbButton size="large" status="warning" (click)="redoClick()"><nb-icon icon="corner-left-up-outline"></nb-icon> ارجع خطوة للوراء </button>
-                <button class="m-3" nbButton size="large" status="info" (click)="checkChapter(dialog)"><nb-icon icon="checkmark-outline"></nb-icon> تحقق من صحة السورة</button>
+                <button nbTooltip="ارجع خطوة للوراء" nbTooltipPlacement="bottom" class="m-3" nbButton size="large" status="warning" (click)="redoClick()"><nb-icon icon="corner-left-up-outline"></nb-icon></button>
+                <button nbTooltip="تحقق من صحة السورة" nbTooltipPlacement="bottom" class="m-3" nbButton size="large" status="info" (click)="checkChapter(dialog)"><nb-icon icon="checkmark-outline"></nb-icon></button>
             </div>
             <div class="row">
-                <div class="col-sm-12 col-md-1" *ngFor="let verse of shuffledVerses">
+                <div class="col-sm-12 col-md-4" *ngFor="let verse of shuffledVerses">
                     <button class="m-1 verse-choice" fullWidth nbButton size="large" status="primary" (click)="verseClick(verse)">
                         {{verse}} </button>
                 </div>

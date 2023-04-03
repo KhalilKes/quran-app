@@ -9,6 +9,7 @@ import { environment } from 'src/environments/environment';
 export class BackendService {
 
   apiURL = environment.apiQDC;
+  apiV4 = environment.apiV4;
 
   constructor(private _http:HttpClient) { }
 
@@ -21,7 +22,7 @@ export class BackendService {
   }
   
   getVersesByChapter(chapterNumber:number):Observable<any> {
-    return this._http.get(`${this.apiURL}/verses/by_chapter/${chapterNumber}?words=true&filter_page_words=true`);
+    return this._http.get(`${this.apiV4}/verses/uthmani?chapter_number=${chapterNumber}`);
   }
 
   getVersesByPageAndAyat(page:number, from:number, to:number):Observable<any> {

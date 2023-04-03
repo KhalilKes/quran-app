@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ChapterRoutingModule } from './chapter-routing.module';
 import { ChapterComponent } from './chapter.component';
-import { NbAlertModule, NbButtonModule, NbCardModule, NbDialogModule, NbDialogService, NbIconModule, NbLayoutModule, NbTagModule } from '@nebular/theme';
+import { NbAlertModule, NbButtonModule, NbCardModule, NbDialogModule, NbIconModule, NbLayoutModule, NbTagModule, NbTooltipModule } from '@nebular/theme';
 
 
 
@@ -19,7 +19,8 @@ import { NbAlertModule, NbButtonModule, NbCardModule, NbDialogModule, NbDialogSe
     NbIconModule,
     NbDialogModule.forChild(),
     NbAlertModule,
-    NbCardModule
+    NbCardModule,
+    NbTooltipModule
   ]
 })
 export class ChapterModule { }

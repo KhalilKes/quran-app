@@ -36,10 +36,9 @@ export class ChapterComponent implements OnInit {
       });
       this._backendService.getVersesByChapter(params['id']).subscribe(data => {
         data.verses.forEach((element: any) => {
-          element.words.forEach((item: any) => {
-            this.versesTable.push(item.text);
-            this.shuffledVerses.push(item.text);
-          });
+          this.versesTable.push(element.text_uthmani);
+          this.shuffledVerses.push(element.text_uthmani);
+
         });
         this.shuffledVerses = this.shuffleFn(this.shuffledVerses);
       })

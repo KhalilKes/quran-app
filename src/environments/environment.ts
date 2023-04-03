@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-
-  apiQDC:"https://api.qurancdn.com/api/qdc"
+  apiQDC:"https://api.qurancdn.com/api/qdc",
+  apiV4: "https://api.quran.com/api/v4/quran"
 };
 
 /*
