@@ -1,14 +1,15 @@
 <nb-layout>
     <nb-layout-header fixed>
         <div class="container">
-            <div class="d-flex flex-row">
+            <div class="d-flex flex-row ">
                 <input class="m-2" type="text" fullWidth nbInput disabled placeholder="البحث">
-                <button nbButton status="primary"><nb-icon icon="headphones-outline"></nb-icon>قريبا سماع آيات، احزاب، اجزاء...</button>
+                <button nbTooltip="استمع للقرآن" nbTooltipPlacement="bottom" nbButton size="large" status="primary"><nb-icon icon="headphones-outline"></nb-icon></button>
             </div>
         </div>
     </nb-layout-header>
     <nb-layout-column>
         <div class="container">
+            <h2 class="m-5 d-flex justify-content-center align-items-center">لعبة حفض القرآن ،اختر سورة و ابدأ تركيبها الآن </h2>
             <div class="row flex-row-reverse">
               <div class="col-sm-12 col-md-4" *ngFor="let chapter of chapters">
                 <nb-card>
@@ -18,7 +19,7 @@
                         <div class="surah-name-en"> {{chapter.name_simple}} </div>
                         <div class="img-container">
                             <img src="assets/images/star.svg" alt="star-icon" />
-                            <div class="number-of-ayat">  {{chapter.verses_count}} </div>
+                            <div class="number-of-ayat"> {{chapter.verses_count}} </div>
                         </div>   
                     </nb-card-body>
                 </nb-card>
@@ -28,7 +29,7 @@
     </nb-layout-column>
     <nb-layout-footer>
         <div class="duaa-text">
-            v0.0.1 ❤️ اللهم اجعل القرآن الكريم ربيع قلوبنا 
+            v0.0.4 ❤️ اللهم اجعل القرآن الكريم ربيع قلوبنا 
         </div>
     </nb-layout-footer>
 </nb-layout>

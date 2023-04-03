@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { NbAutocompleteModule, NbButtonModule, NbCardModule, NbIconModule, NbInputModule, NbLayoutModule, NbTagModule } from '@nebular/theme';
+import { NbAutocompleteModule, NbButtonModule, NbCardModule, NbIconModule, NbInputModule, NbLayoutModule, NbTagModule, NbTooltipModule } from '@nebular/theme';
 
 
 @NgModule({
@@ -19,7 +19,8 @@ import { NbAutocompleteModule, NbButtonModule, NbCardModule, NbIconModule, NbInp
     NbAutocompleteModule,
     NbCardModule,
     NbInputModule,
-    NbTagModule
+    NbTagModule,
+    NbTooltipModule
   ]
 })
 export class HomeModule { }
